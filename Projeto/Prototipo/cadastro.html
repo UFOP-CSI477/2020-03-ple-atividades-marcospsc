@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>O Mundo dos CDs</title>
+</head>
+
+<body>
+    <header>
+        <h1>O Mundo dos CDs</h1>
+    </header>
+
+    <h2>Aqui você compra, vende, troca, vive CDs!</h2>
+
+    <menu>
+
+        <p>Menu</p>
+        <div>
+            <a href="home.html">Home</a>
+            <br>
+            <a href="produtos.html">Produtos</a>
+            <br>
+            <a href="pesquisa.html">Pesquisa</a>
+            <br>
+            <a href="login.html">Sair</a>
+            <br>
+        </div>
+    </menu>
+
+    <h3>Cadastro</h3>
+
+    <form method="get" action="home.html">
+
+        <div class="controle">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+        </div>
+
+        <div class="controle">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="E-mail da pessoa">
+        </div>
+
+        <div class="controle">
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="date" name="nasc" id="nasc" placeholder="Data de nascimento">
+        </div>
+
+        <div class="controle">
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Telefone da pessoa">
+        </div>
+
+        <div class="genero">
+            <label>Gênero:</label>
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="NB">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="SR">
+                <label for="semresposta">Prefiro não informar</label>
+            </div>
+
+        </div>
+
+        <div class="produtointeresse">
+            <label>Produtos de interesse:</label>
+
+            <div>
+                <input type="checkbox" name="produto[1]" id="cd">
+                <label for="cd">CD</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="produto[2]" id="dvd">
+                <label for="dvd">DVD</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="produto[3]" id="lp">
+                <label for="lp">LP</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="produto[4]" id="fitak7">
+                <label for="fitak7">Fita Cassete</label>
+            </div>
+        </div>
+
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+
+    <footer>
+        Viva a música!
+    </footer>
+
+</body>
+
+</html>

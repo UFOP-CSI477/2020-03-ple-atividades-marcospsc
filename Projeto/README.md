@@ -21,8 +21,10 @@
 
   (Pode haver alterações durante o processo de desenvolvimento)
   Este projeto terá as seguintes funcionalidades:
+-página para login;
+-página para cadastro de usuário;
 -home page com destaques (usuários, produtos, etc);
--perfil como dados pessoais do usuário, lista de desejos, lista de produtos, lista de amigos;
+-perfil com dados pessoais do usuário, lista de desejos, lista de produtos, lista de amigos;
 -carrinho de compras e página para finalização do pedido;
 -espaço para negociação/troca;
 -página com produtos disponíveis (gerará uma lista contendo todos os produtos disponíveis para venda e troca);
@@ -32,12 +34,12 @@
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
+  Neste trabalho não serão considerados os tratamentos de pagamentos e descrição diferenciada de um mesmo produto.
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Protótipos para as páginas login, perfil, home, bazar, cadastro, carrinho, negócio, pesquisa e produtos foram elaborados, e podem ser encontrados em https://github.com/UFOP-CSI477/2020-03-ple-atividades-marcospsc/tree/master/Projeto/Prototipo 
 
 ### 5. Referências
 

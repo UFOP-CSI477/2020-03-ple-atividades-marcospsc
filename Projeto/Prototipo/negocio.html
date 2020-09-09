@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>O Mundo dos CDs</title>
+</head>
+
+<body>
+    <header>
+        <h1>O Mundo dos CDs</h1>
+    </header>
+
+    <h2>Aqui você compra, vende, troca, vive CDs!</h2>
+
+    <menu>
+
+        <p>Menu</p>
+        <div>
+            <a href="home.html">Home</a>
+            <br>
+            <a href="perfil.html">Meu Perfil</a>
+            <br>
+            <a href="produtos.html">Produtos</a>
+            <br>
+            <a href="bazar.html">Bazar</a>
+            <br>
+            <a href="pesquisa.html">Pesquisa</a>
+            <br>
+            <a href="carrinho.html">Carrinho</a>
+            <br>
+            <a href="login.html">Sair</a>
+            <br>
+        </div>
+    </menu>
+
+    <h3>Negociar Produto</h3>
+
+    <div class="metodo">
+        <label>Método:</label>
+        <div>
+            <input type="radio" name="metodo" id="comprar" value="C">
+            <label for="comprar">Comprar</label>
+        </div>
+
+        <div>
+            <input type="radio" name="metodo" id="trocar" value="T">
+            <label for="trocar">Trocar</label>
+        </div>
+    </div>
+
+    <form method="get" action="validar.html">
+
+        <div class="controle">
+            <label for="valor">Valor oferecido:</label>
+            <input type="text" name="valor" id="valor" placeholder="Quanto quer pagar no Produto?">
+        </div>
+
+        <div class="controle">
+            <label for="troca">Produto para troca:</label>
+            <input type="text" name="troca" id="troca" placeholder="Qual procuto oferece para troca?">
+        </div>
+
+        <div class="controle">
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="date" name="nasc" id="nasc" placeholder="Data de nascimento">
+        </div>
+
+        <div class="controle">
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Telefone da pessoa">
+        </div>       
+
+
+        <input type="submit" value="Enviar proposta">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+
+</html>
