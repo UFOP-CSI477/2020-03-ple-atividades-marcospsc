@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução o JS</title>
+
+    <script>
+        'use strict'
+
+        function Pessoa(nome, endereco, idade, email, tel) {
+            this.nome = nome;
+            this.endereco = endereco;
+            this.idade = idade;
+            this.email = email;
+            this.tel = tel;
+        }
+
+        function carregarDados() {
+            const nome = window.prompt('Insira seu nome aqui:');
+            const endereco = window.prompt('Insira o seu endereço aqui:');
+            const idade = window.prompt('Insira sua idade aqui:');
+            const email = window.prompt('Insira seu email aqui:');
+            const tel = window.prompt('Insira seu telefone aqui:');
+
+            const pessoa = new Pessoa(nome, endereco, idade, email, tel);
+
+            document.getElementById("nome").innerHTML = pessoa.nome;
+            document.getElementById("endereco").innerHTML = pessoa.endereco;
+            document.getElementById("idade").innerHTML = pessoa.idade;
+            document.getElementById("email").innerHTML = pessoa.email;
+            document.getElementById("tel").innerHTML = pessoa.tel;
+
+            console.log(pessoa);
+
+        }
+
+        function carregarDadosDoForm() {
+            const nome = document.frmDados.nome.value;
+            const endereco = document.frmDados.endereco.value;
+            const idade = document.frmDados.idade.value;
+            const email = document.frmDados.email.value;
+            const tel = document.frmDados.tel.value;
+
+            const pessoa = new Pessoa(nome, endereco, idade, email, tel);
+            console.log(pessoa);
+
+            window.alert(`Dados carregados com sucesso: ${nome} ${endereco} ${idade} ${email} ${tel}`);
+
+            let obj = {
+                name: nome,
+                addres: endereco,
+                age: idade,
+                email: email,
+                phone: tel
+            };
+
+            console.log(obj);
+        }
+
+        function imprime() {            
+            
+            const nome = document.frmDados.nome.value;
+            const endereco = document.frmDados.endereco.value;
+            const idade = document.frmDados.idade.value;
+            const email = document.frmDados.email.value;
+            const tel = document.frmDados.tel.value;
+
+            const pessoa = new Pessoa(nome, endereco, idade, email, tel);
+            console.log(pessoa);
+
+
+            let obj = {
+                name: nome,
+                addres: endereco,
+                age: idade,
+                email: email,
+                phone: tel
+            };
+
+            document.getElementById("nome").innerHTML = pessoa.nome;
+            document.getElementById("endereco").innerHTML = pessoa.endereco;
+            document.getElementById("idade").innerHTML = pessoa.idade;
+            document.getElementById("email").innerHTML = pessoa.email;
+            document.getElementById("tel").innerHTML = pessoa.tel;
+
+            console.log(pessoa);
+
+            console.log(obj);
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <script>
+        document.write(pessoa);
+    </script>
+
+    <div id="dados">
+        <div id="nome"></div>
+        <div id="endereco"></div>
+        <div id="idade"></div>
+        <div id="email"></div>
+        <div id="tel"></div>
+    </div>
+
+    <form action="post" name="frmDados">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" name="endereco" placeholder="Endereço">
+        <input type="number" name="idade" placeholder="Idade">
+        <input type="email" name="email" placeholder="Email">
+        <input type="tel" name="tel" placeholder="Telefone">
+    </form>
+
+    <input type="button" value="Carregar" onclick="carregarDados()">
+    <input type="button" value="Carregar do Formulário" onclick="carregarDadosDoForm()">
+    <input type="button" value="Imprime" onclick="Imprime()">
+
+</body>
+
+</html>
