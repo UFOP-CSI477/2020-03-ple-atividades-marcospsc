@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do Índice de Massa Corporal</title>
+
+    <script src="02-imc.js"></script>
+
+</head>
+
+<body>
+
+    <form name="dados">
+        <label for="peso">Peso</label>
+        <input type="text" name="peso" id="peso" placeholder="Peso da pessoa.">
+
+        <label for="altura">Altura</label>
+        <input type="text" name="altura" id="altura" placeholder="Altura da pessoa em cm.">
+
+        <label for="resultado">Resultado</label>
+        <input type="text" name="resultado" id="resultado" value="" disabled>
+
+        <input type="button" value="Calcular" onclick="calcularIMC()">
+    </form>
+    
+</body>
+</html>

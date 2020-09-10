@@ -9,7 +9,7 @@ function carregarNomes(nome){
 }
 
 function exibeFreqNomes(){
-    window.
+    //window.
 }
 
 
