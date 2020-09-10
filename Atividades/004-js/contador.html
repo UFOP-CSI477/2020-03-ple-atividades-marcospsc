@@ -11,16 +11,12 @@
         let id;
         let executando = false;
 
-        var hora;
-        var data = new Date;
-        function imprimeHora(){
-            hora = setInterval(function(){atualizaHora("Data atualizada");}, 1000);   
+        
+        var adata = setInterval(minhaData, 2000);
+        function minhaData(){
+            document.getElementById("data").innerHTML = Date();
         }
-        function atualizaHora(){
-            hora = setInterval(function(){
-                document.getElementById().innerHTML = data;
-            })
-        }
+
 
         function processo(){
             document.getElementById("contador").innerHTML = `contador = ${contador}`;
@@ -49,7 +45,9 @@
 </head>
 <body>
 
-    <button onclick="atualizaHora()">Atualiza Hora</button>
+    <div id="dados">
+        <div id="data"></div>
+    </div>
 
     <div id="contador"></div>
 

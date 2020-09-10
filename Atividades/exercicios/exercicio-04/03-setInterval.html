@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+
+    <link rel="stylesheet" href="arqcss.css">
+
+    <script>
+
+        var adata = setInterval(minhaData, 2000);
+        function minhaData(){
+            document.getElementById("data").innerHTML = Date();
+        }
+
+    </script>
+</head>
+<body>
+
+    <div id="dados">
+        <div id="data"></div>
+    </div>
+
+</body>
+</html>

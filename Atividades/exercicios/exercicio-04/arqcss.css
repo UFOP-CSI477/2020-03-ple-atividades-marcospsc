@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(237, 253, 166);
+}
+
+input[type="text"]{
+    width: 100%;
+    background-color: rgb(252, 169, 169);
+    border: 1px solid rgb(128, 0, 0);
+    
+}
+
+input[type="email"]{
+    width: 100%;
+    background-color: rgb(252, 169, 169);
+    border: 1px solid rgb(128, 0, 0);
+}
+
+input[type="tel"]{
+    width: 100%;
+    background-color: rgb(252, 169, 169);
+    border: 1px solid rgb(128, 0, 0);
+}
+
+input[type="button"]{
+    width: 100%;
+    background-color: rgb(252, 169, 169);
+    border: 1px solid rgb(128, 0, 0);
+}
