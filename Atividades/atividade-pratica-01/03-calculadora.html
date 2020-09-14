@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <script src="03-calculadora.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+
+    <form name="calculadora">
+        <input type="text" name="telaCalculadora" id="telaCalculadora">
+
+        <br>
+        <input type="button" value="7" onclick="tecla(value);">
+        <input type="button" value="8" onclick="tecla(value);">
+        <input type="button" value="9" onclick="tecla(value);">
+        <input type="button" value="/" onclick="tecla(value);">
+
+        <br>
+        <input type="button" value="4" onclick="tecla(value);">
+        <input type="button" value="5" onclick="tecla(value);">
+        <input type="button" value="6" onclick="tecla(value);">
+        <input type="button" value="*" onclick="tecla(value);">
+
+        <br>
+        <input type="button" value="1" onclick="tecla(value);">
+        <input type="button" value="2" onclick="tecla(value);">
+        <input type="button" value="3" onclick="tecla(value);">
+        <input type="button" value="-" onclick="tecla(value);">
+
+        <br>
+        <input type="button" value="0" onclick="tecla(value);">
+        <input type="button" value="," onclick="tecla(value);">
+        <input type="button" value="C" onclick="reset();">
+        <input type="button" value="+" onclick="tecla(value);">
+
+        <br>
+        <input type="button" value="=" onclick="calculo();">
+    </form>
+</body>
+
+</html>
