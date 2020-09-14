@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala Richter</title>
+    <script src="04-escala.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+    <h1>Escala Richter</h1>
+
+    <p>A escala Richter é determinada pela seguinte fórmula:</p>
+    <br>
+    $$ {M = log_{10} A + 3·log_{10} (8·Δt) - 2,92} $$
+    <p>Sendo:</p>
+    <br>
+    <ul>
+        <p>M = magnitude do terremoto;</p>
+        <p>A = amplitude (em milímetros medida com o sismógrafo;</p>
+        <p>Δt é o intervalo de tempo (em segundos) entre a onda superficial (S) e a onda de pressão máxima (P).</p>
+    </ul>
+
+    <p>Para calcular a Magnitude Richter, entre com os valores:</p>
+
+    <form name="dados">
+
+        <div>
+            <label for="nome">Amplitude: </label>
+            <input type="number" name="amplitude" id="amplitude" placeholder="Amplitude do terremoto">
+        </div>
+
+        <div>
+            <label for="endereco">Intervalo de tempo (Δt) :</label>
+            <input type="number" name="deltat" id="deltat" placeholder="Intervalo de tempo">
+        </div>
+
+        <input type="submit" value="Calcular" onclick="calculoRichter()">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>
