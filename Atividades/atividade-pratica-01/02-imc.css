@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    margin-left: 0mm;
+    background-color: plum;
+    font-size: 30pt;
+    color: indigo;
+    border-color: red;
+    border-style: dotted;                
+    font-family: 'Viaoda Libre', cursive;
+}
+
+body{
+    margin-left: 1mm;
+    background-color: skyblue;
+    border-collapse: initial;
+    margin-left: 0mm;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(255, 185, 185);
+    border: 1px solid green;
+    border-radius: 50px;
+    
+}
+
+input[type="button"]{
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(255, 185, 185);
+    border: 1px solid green;
+    border-radius: 50px;
+    
+}
+
+input[type="reset"]{
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(255, 185, 185);
+    border: 1px solid green;
+    border-radius: 50px;
+    
+}
