@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!--define padrão do html que esta sendo usado-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Introdução ao HTML (Usando Bootstrap)</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <form method="get" action="/exercico-05/validar.php">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome da pessoa" class="form-control">
+            </div>
+    
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço da pessoa" class="form-control">
+            </div>
+    
+            <div class="form-group">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Telefone da pessoa" class="form-control">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail da pessoa" class="form-control">
+            </div>
+    
+            <div>
+                <label>Gênero:</label>
+    
+                <div class="form-group form-check">
+                    <input type="radio" name="genero" id="feminino" value="F" class="form-check-input">
+                    <label for="feminino" class="form-check-label">Feminino</label>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="radio" name="genero" id="masculino" value="M" class="form-check-input">
+                    <label for="masculino" class="form-check-label">Masculino</label>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="radio" name="genero" id="naobinario" value="NB" class="form-check-input">
+                    <label for="naobinario" class="form-check-label">Não binário</label>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="radio" name="genero" id="semresposta" value="SR" class="form-check-input">
+                    <label for="semresposta" class="form-check-label">Prefiro não informar</label>
+                </div>
+            </div>
+    
+            <div>
+    
+                <label>Áreas de interesse:</label>
+    
+                <div class="form-group form-check">
+                    <input type="checkbox" name="area[0]" id="web" class="form-check-input">
+                    <label for="web" class="form-check-label">Sistemas Web</label>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="checkbox" name="area[1]" id="db" class="form-check-input">
+                    <label for="db" class="form-check-label">Banco de dados</label>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="checkbox" name="area[2]" id="redes" class="form-check-input">
+                    <label for="redes" class="form-check-label">Redes</label>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="checkbox" name="area[4]" id="engsoft" class="form-check-input">
+                    <label for="engsoft" class="form-check-label">Engenharia de Software</label>
+                </div>
+    
+            </div>
+    
+            <input type="submit" value="Cadastrar" class="btn btn-primary">
+            <input type="reset" value="Limpar" class="btn btn-danger">
+    
+        </form>
+
+    </body>
+</html>
