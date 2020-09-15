@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(121, 121, 121);
+}
+
+
+h1{
+    text-align: center;
+    color: rgb(43, 12, 12);
+}
+
+label{
+    font-weight: bold;
+}
+
+div{
+    border: 2px solid rgb(0, 0, 0);    
+    background-color: rgb(236, 145, 145);
+}
+
+form > div{
+    background-color: rgb(236, 145, 145);
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+input[type="number"]{
+    width: 98%;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+input[type="reset"]{
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid rgb(0, 0, 0);
+}
