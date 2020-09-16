@@ -14,4 +14,4 @@
     }
 
     echo "<a href=\"/login/index.php\">Voltar</a>";
-    echo '<a href="index.php">Voltar</a>';
+    echo '<a href="index.php">Voltar</a>'; 

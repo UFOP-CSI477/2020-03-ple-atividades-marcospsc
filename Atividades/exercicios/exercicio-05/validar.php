@@ -1,40 +1,46 @@
 <?php
-    //echo "POST";
-    //var_dump($_POST);
-
-    $nome = $_POST['nome'];
-    $endereco = $_POST['endereco'];
-    $tel = $_POST['tel'];
-    $email = $_POST['email'];
+    $name = $_POST['nome'];
+    $address = $_POST['endereco'];
+    $phone = $_POST['tel'];
+    $mail = $_POST['email'];
 
     $genero = $_POST['genero'];
 
-    $interesses = $_POST['interesses'];
+    //$interesses = $_POST['interesses'];
+    $area0 = $_POST['area0'];
+    $area1 = $_POST['area1'];
+    $area2 = $_POST['area2'];
+    $area3 = $_POST['area3'];
 
-    echo "<h1>Nome: $nome!</h1>";
-    echo "<p>Endereço: $endereco </p>";
-    echo "<p>Telefone: $tel </p>";
-    echo "<p>email: $email </p>";
+    echo "<h1>Nome: $name!</h1>";
+    echo "<p>Endereço: $address </p>";
+    echo "<p>Telefone: $phone </p>";
+    echo "<p>email: $mail </p>";
    
-    /*/if ($genero == "F"){
-        //echo "<h1>Gênero: Feminino!</h1>";
-    //}else if ($genero == "M"){
-        //echo "<h1>Gênero: Masculino!</h1>";
+    if ($genero == "F"){
+        echo "<p>Gênero: Feminino!</p>";
+    }else if ($genero == "M"){
+        echo "<p>Gênero: Masculino!</p>";
     }else if ($genero == "NB"){
-        echo "<h1>Gênero: Não binário!</h1>";
+        echo "<p>Gênero: Não binário!</p>";
     }else{
-        echo "<h1>Gênero: Não informado!</h1>";
+        echo "<p>Gênero: Não informado!</p>";
     }
 
-    if ($interesses == "F"){
-        echo "<h1>Gênero: Feminino!</h1>";
-    }else if ($interesses == "M"){
-        echo "<h1>Gênero: Masculino!</h1>";
-    }else if ($interesses == "NB"){
-        echo "<h1>Gênero: Não binário!</h1>";
-    }else{
-        echo "<h1>Gênero: Não informado!</h1>";
+    echo "<p>Área(s) de interesse:</p>";
+
+    if ($area0 == "W"){
+        echo "<p>Sistemas Web</p>";
     }
-*/
-    echo "<a href=\"/login/index.php\">Voltar</a>";
-    echo '<a href="index.php">Voltar</a>';
+    if ($area1 == "D"){
+        echo "<p>Banco de Dados</p>";
+    }
+    if ($area2 == "R"){
+        echo "<p>Redes</p>";
+    }
+    if ($area3 == "E"){
+        echo "<p>Engenharia de Software</p>";
+    }
+
+    //echo "<a href=\"/login/index.php\">Voltar</a>";
+    echo '<a href="cadastro.html">Voltar</a>';
