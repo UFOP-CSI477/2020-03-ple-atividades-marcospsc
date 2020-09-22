@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(186, 253, 166);
+
+}
+
+menu{
+    font-weight: bold;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px;
+}
+
+th{
+    font-size: 14pt;
+    font-family: Tahoma;
+    font-style: italic;
+}
+
+caption{
+    font-size: 14pt;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd){ /*an + b uma formula como argumento*/
+    background-color: rgb(206, 206, 206);
+}
+
+tbody tr:nth-child(even){ /*an + b uma formula como argumento*/
+    background-color:rgb(255, 250, 200);
+}
+
+thead tr:hover{
+    background-color: green;
+}
+
+tbody li:hover{ /*pq nao funciona?*/
+    background-color: green;
+}
+
+tfoot tr:hover{
+    background-color: green;
+}
+
+.centralizado{
+    text-align: center;
+}
+
+thead tr{
+    background-color: rgb(247, 237, 133);
+}
+
+tfoot tr{
+    background-color: rgb(247, 237, 133);
+}
+
+
+
