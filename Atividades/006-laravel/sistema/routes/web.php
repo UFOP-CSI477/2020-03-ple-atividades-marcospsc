@@ -13,6 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Models\Estado;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/ola', function(){
+    return 'Olá Mundo!';
+});
+
+Route::get('/estados/todos', function(){
+    $estados = Estado::all();
+    return view('lista', [ 'dados' => $estados]);
+});
+
+Route::get('/estados/{id}', function($id){
+    $estado = Estado::findOrFail($id);
+
+    if($estado == null){
+        return 'ID inválido';
+    }
+    return view('lista', [ 'dados' => $estado]);
 });
