@@ -14,25 +14,40 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Models\Estado;
+use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\CidadeController;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('principal');
+})->name('principal');
 
-Route::get('/ola', function(){
-    return 'Olá Mundo!';
-});
+Route::resource('/estados', EstadoController::class)->middleware('auth');
+Route::resource('/cidades', CidadeController::class);
 
-Route::get('/estados/todos', function(){
-    $estados = Estado::all();
-    return view('lista', [ 'dados' => $estados]);
-});
+// Route::get('/ola', function() {
+//     return 'Olá, mundo!';
+// });
 
-Route::get('/estados/{id}', function($id){
-    $estado = Estado::findOrFail($id);
+// Route::get('/estados/todos', function() {
 
-    if($estado == null){
-        return 'ID inválido';
-    }
-    return view('lista', [ 'dados' => $estado]);
-});
+//     $estados = Estado::all();
+
+//     return view('lista', [ 'dados' => $estados ]);
+
+// });
+
+// Route::get('/estados/{id}', function($id) {
+
+//     $estado = Estado::findOrFail($id);
+
+//     if ( $estado == null ) {
+//         return 'ID inválido';
+//     }
+
+//     return view('lista', [ 'dados' => $estado ]);
+
+// });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

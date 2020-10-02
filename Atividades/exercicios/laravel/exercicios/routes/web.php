@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Models\Produto;
+use App\Http\Controllers\ProdutoController;
 
 Route::get('/produtos', function(){
     return Produto::all();
@@ -35,4 +36,17 @@ Route::get('/produtos/{id}', function($id){
 
 Route::get('/ola', function(){
     return 'Olá Mundo!';
-});
+}); 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', function () {
+    return view('principal');
+})->name('principal');
+
+Route::resource('/cidades', ProdutoController::class);
+
+
+
